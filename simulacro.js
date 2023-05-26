@@ -26,7 +26,7 @@ const persona10 = new Persona (10,"Nahuel Peña", 13);
 
 const PERSONAS = [persona1,persona2,persona3,persona4,persona5,persona6,persona7,persona8,persona9,persona10];
 
-
+/* Mensaje de Presentación */
 function saludoTrabajador(){
     let = saludoGuardia ="Estas personas quieren ingresar al establecimiento, por favor verifique la edad de los mismos. Solo se permiten mayores de 18 años. \n";
     PERSONAS.forEach(e => {
@@ -40,8 +40,7 @@ function saludoTrabajador(){
 saludoTrabajador()
 
 
-/* Función de filtrado de "Personas", para saber si son menores o mayores de edad */
-
+/* Función de filtrado de "Personas", para saber si son menores o mayores de edad y reflejarlos en la tabla */
 let entradaMayores = PERSONAS.filter((Persona) => {
 
     if(Persona.edad >= 18){
@@ -50,7 +49,6 @@ let entradaMayores = PERSONAS.filter((Persona) => {
         return false;
     }   
 }) 
-
 console.table (entradaMayores);
 
 
@@ -59,7 +57,14 @@ function entradaBoliche(){
         Persona = "Podes ingresar al establecimiento"
     } else Persona = "Sos menor de edad, no podes ingresar"
 };
-
 entradaBoliche()
+
+function entrada (entradaMayores, entradaBoliche){
+    if(entradaBoliche = true){
+        entradaMayores
+    }
+}
+
+console.table (entrada)
 
 
