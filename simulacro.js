@@ -59,12 +59,5 @@ function entradaBoliche(){
 };
 entradaBoliche()
 
-function entrada (entradaMayores, entradaBoliche){
-    if(entradaBoliche = true){
-        entradaMayores
-    }
-}
-
-console.table (entrada)
 
 
