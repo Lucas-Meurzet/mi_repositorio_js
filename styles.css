@@ -1,0 +1,14 @@
+#cardsClientes{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 5px;
+}
+
+.principal{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: white;
+}
