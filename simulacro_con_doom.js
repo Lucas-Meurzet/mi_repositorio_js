@@ -25,13 +25,14 @@ PERSONAS.forEach((Persona => {
     divCard.id = Persona.id
     divCard.innerHTML = `
     <div class="card" style="width: 18rem;">
-  <img src="./img/Usuario.png" class="card-img-top" alt="Error al Cargar">
-  <div class="card-body">
-    <h5 class="card-title">${Persona.nombre}</h5>
-    <p class="card-text">Tenés ${Persona.edad}</p>
-    <a href="#" class="btn btn-primary">Verificar entrada</a>
-  </div>
-</div>`
+    <div class="card-body">
+      <h5 class="card-title">${Persona.nombre}</h5>
+      <p class="card-text">Tenés ${Persona.edad}</p>
+      <a href="#" class="btn btn-primary">Verificar Edad</a>
+    </div>
+  </div>`
 
-    cardsClientes.append(divCard)
+    cardsClientes.append(divCard)   
 }))
+
+
