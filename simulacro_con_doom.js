@@ -24,15 +24,27 @@ PERSONAS.forEach((Persona => {
     let divCard = document.createElement("div")
     divCard.id = Persona.id
     divCard.innerHTML = `
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 18rem;" id="card-background">
     <div class="card-body">
       <h5 class="card-title">${Persona.nombre}</h5>
       <p class="card-text">Tenés ${Persona.edad}</p>
-      <a href="#" class="btn btn-primary">Verificar Edad</a>
+      <input type="button" class="btn btn-primary" value="Verificar Edad" onclick="verificarEdad()"> 
     </div>
   </div>`
 
     cardsClientes.append(divCard)   
 }))
+
+function verificarEdad (){
+
+    const cardElegida = document.getElementById("card-background")
+    
+    if(Persona.edad >= 18){
+        cardElegida.style.backgroundColor = "green"
+    }else{
+        cardElegida.style.backgroundColor = "red"
+    }    
+}
+
 
 
