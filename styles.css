@@ -1,34 +1,60 @@
-#cardsClientes{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5px;
-    margin: 5px;
-    text-align: center;
-    justify-content: center;
+h1{
+  text-align: center;
 }
 
-.principal{
-    text-align: center;
-    text-transform: uppercase;
-    margin: 5px;
-    border: 1px solid black;
-    background-color: white;
+h2{
+  text-align: center;
 }
 
-body{
-    background-image: linear-gradient(135deg,rgba(2,0,36,1) 4%, rgba(6,5,84,1) 23%, rgba(9,9,121,1) 38%, rgba(7,55,151,1) 55%, rgba(5,100,181,1) 72%, rgba(3,156,218,1) 86%, rgba(0,212,255,1) 100%);
-    background-size: 500%;
-    animation: fondoanimado 30s infinite;
-
-    @keyframes fondoanimado{
-        0%{ 
-          background-position: 0% 50%;
-      }
-      50%{
-        background-position: 100% 50%;
-      }
-      100%{
-        background-position: 0% 50%;
-      }
-      }  
+#articulos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10%;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 16px;
+  color: black;
+}
+
+#carrito{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.producto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+}
+
