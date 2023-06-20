@@ -118,3 +118,4 @@ agregarCards(Productos);
 obtenerCarritoDeLocalStorage();
 actualizarCarrito();
  
+/* Falta función finalizar compra con sweet alert */
