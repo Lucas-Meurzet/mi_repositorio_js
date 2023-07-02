@@ -1,6 +1,7 @@
 body{
-background: rgb(255,128,128);
-background: radial-gradient(circle, rgba(255,128,128,1) 0%, rgba(148,187,233,1) 100%);
+ margin: 0;
+ background: rgb(255,128,128);
+ background: radial-gradient(circle, rgba(255,128,128,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 #productos{
@@ -17,5 +18,32 @@ background: radial-gradient(circle, rgba(255,128,128,1) 0%, rgba(148,187,233,1) 
 
 h1{
   text-transform: uppercase;
-  font-size: 50px;
+}
+
+h6{
+  margin: 20px;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.btnfinal{
+  padding: 10px;
+  margin: 10px;
+}
+
+.card{
+  align-items: center;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }

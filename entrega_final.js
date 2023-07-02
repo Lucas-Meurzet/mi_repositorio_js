@@ -59,8 +59,8 @@ function verCarrito() {
             <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="./img/${datosProductos.imagen}" alt="Nombre del producto ${datosProductos.nombre}">
             <div class="card-body">
-            <h5 class="card-title">Llevás ${datosProductos.nombre}</h5>
-            <p class="card-text">Te estás llevando ${item.cantidad}</p>
+            <h5 class="card-title">Producto agregado ${datosProductos.nombre}</h5>
+            <p class="card-text">Cantidad ${item.cantidad}</p>
             </div>
             </div>
             `;
@@ -75,15 +75,17 @@ function verCarrito() {
 
         divCarrito.innerHTML += `
             <h6> Total a pagar: USD$ ${precioFinal} </h6>
-            <input type="button" class="btn btn-dark" value= "Finalizar Compra" onClick="finalizarCompra()">
-            <input type="button" class="btn btn-dark" value= "Vaciar Carrito" onClick="limpiaCart()">
+            <div class="button-container">
+            <input type="button" class="btnfinal btn btn-dark" value= "FINALIZAR COMPRA" onClick="finalizarCompra()">
+            <input type="button" class="btnfinal btn btn-dark" value= "VACIAR CARRITO" onClick="limpiaCart()">
+            </div>
             `;
 
     } else {
         swal.fire({
-            title: "Lo sentimos",
+            icon:  "error",
             text:  "No tenés productos agregados",
-            icon:  "error"
+            title: "Lo sentimos"
         });
     }
 }
