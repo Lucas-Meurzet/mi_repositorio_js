@@ -3,3 +3,19 @@ background: rgb(255,128,128);
 background: radial-gradient(circle, rgba(255,128,128,1) 0%, rgba(148,187,233,1) 100%);
 }
 
+#productos{
+  align-items: center;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar{
+  width: 100%;
+  padding: 10px;
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 50px;
+}
