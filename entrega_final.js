@@ -77,7 +77,7 @@ function verCarrito() {
             <h6> Total a pagar: USD$ ${precioFinal} </h6>
             <div class="button-container">
             <input type="button" class="btnfinal btn btn-dark" value= "FINALIZAR COMPRA" onClick="finalizarCompra()">
-            <input type="button" class="btnfinal btn btn-dark" value= "VACIAR CARRITO" onClick="limpiaCart()">
+            <input type="button" class="btnfinal btn btn-dark" value= "VACIAR CARRITO" onClick="limpiarCarrito()">
             </div>
             `;
 
@@ -101,7 +101,7 @@ function finalizarCompra() {
     });
 }
 
-function limpiaCart() {
+function limpiarCarrito() {
     while (arrayCarrito.length > 0) {
         arrayCarrito.pop();
     }
